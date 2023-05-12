@@ -7,8 +7,9 @@ trigger:
 - main
 
 pool:
-  vmImage: 'windows-latest'
-
+  name: 'Default'
+  demands:
+  - npm
 variables:
   solution: '**/*.sln'
   buildPlatform: 'Any CPU'
